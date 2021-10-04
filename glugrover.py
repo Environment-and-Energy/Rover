@@ -9,10 +9,11 @@ right_Sensor = LineSensor(20) # Initialise right line sensor / Yellow out cable
 # Code to run the Rover with line sensors
 left_Sensor.when_line = glug.left
 right_Sensor.when_line = glug.right
-left_Sensor.when_no_line = glug.forward(0.4)
-right_Sensor.when_no_line = glug.forward(0.4)
+left_Sensor.when_no_line = glug.forward()
+right_Sensor.when_no_line = glug.forward()
 
-pause()
+pause()  
+
 
 # Code to run the Rover with motor controller
 #while True:
